@@ -1,0 +1,185 @@
+body {
+    background: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/BhBjRHe1Mj9qufshq/videoblocks-video-4k-animation-shinny-blue-stars-slowly-movement-in-black-galaxy-space-background-at-night_rlkmgjykg_thumbnail-full01.png');
+}
+
+#input {
+    color: yellow;
+    text-shadow: 1px 1px 1px #eaeaea;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.select {
+    display: inline-block;
+    text-align: left;
+}
+
+.select label {
+    font-size: 1.25rem;
+}
+
+#results {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 550px) {
+    img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.card {
+    padding: 1rem;
+    background: grey;
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
+.card-body {
+    background: white;
+    margin-top: 1rem;
+    border-radius: 3px;
+}
+
+.specs p {
+    margin-bottom: .25rem;
+}
+
+/* ROCKET BY JEFFCADAMPOG ON CODEPEN */
+.jc-con{
+    z-index:-2;
+    overflow:hidden;
+    background-color:transparent;
+    height:100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+  }
+  .jc-rocket-container{
+    z-index:1;
+    position: fixed;
+    bottom: -100px;
+    left: -100px;
+    transform: translate(-50%,-50%) rotate(45deg);
+    animation: blastoff 13s linear infinite;
+  }
+  .jc-rocket{
+    background-color: #fff;
+    height: 150px;
+    width: 50px;
+    animation: rocketfly 5s ease-in-out infinite;
+  }
+  .jc-rocket:before{
+    content:'';
+    position:absolute;
+    top:50%;
+    right:100%;
+    border-bottom: 100px solid red;
+      border-left: 30px solid transparent;
+  }
+  .jc-rocket:after{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:100%;
+    border-bottom: 100px solid red;
+      border-right: 30px solid transparent;
+  }
+  .jc-rocket-head{
+    position:relative;
+    top: -35%;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid red;
+  }
+  .jc-rocket-window{
+    position:relative;
+    top: 0;
+    left: 15%;
+    background-color: skyblue;
+    border: 5px solid gray;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+  }
+  .jc-booster{
+    height:20px;
+    width:50px;
+    position:absolute;
+    top:100%;
+    border-left:10px solid transparent;
+    border-right:10px solid transparent;
+    border-top: 20px solid gray;
+    box-sizing: border-box;
+  }
+  .jc-booster-flames{
+    background-color:yellow;
+    position:absolute;
+    top:120%;
+    left: 0%;
+    height:50px;
+    width:50px;
+   border-radius: 0 50% 50% 50%;
+    transform:rotate(45deg) skew(8deg, 8deg) rotate(180deg);
+    animation: flames linear infinite;
+    box-sizing: border-box;
+  }
+  
+  @keyframes flames{
+    0%{
+      transform:scale(0.8) rotate(45deg) skew(8deg, 8deg) rotate(180deg);
+    }
+    20%{
+      transform: scale(1) rotate(45deg) skew(8deg, 8deg) rotate(180deg);
+    }
+    50%{
+      transform: scale(0.6) rotate(45deg) skew(8deg, 8deg) rotate(180deg);
+    }
+    70%{
+      transform:scale(1) rotate(45deg) skew(8deg, 8deg) rotate(180deg);
+    }
+    100%{
+      transform:scale(0.8) rotate(45deg) skew(8deg, 8deg) rotate(180deg);
+    }
+  }
+  @keyframes rocketfly{
+    0%,100%{
+      transform: translateX(-10px);
+    }
+    20%,25%{
+       transform: translateX(10px);
+    }
+    40%,45%{
+      transform: translate(5px);
+    }
+    60%,65%{
+      transform: translate(15px);
+    }
+    80%,85%{
+      transform: translate(10px);
+    }
+  }
+
+  @keyframes blastoff {
+      0% {
+        bottom: -100px;
+        left: -100px;
+      }
+
+      100% {
+          bottom: 1000px;
+          left: 1000px;
+      }
+  }
